@@ -1,6 +1,6 @@
 # pychatbot
 
-# Installation:
+## *Installation*:
 <b>1. Clone the repository</b>
 > git clone https://github.com/henrylao/pychatbot.git
 
@@ -21,15 +21,15 @@
 > path/to/project/source path/to/project/myvenv/activate
 
 
-# Milestones:
+## *Milestones*
 * [ ] Integrate with a website flask
 * [ ] Serve model on a dedicated RESTapi server using Flask
 * [ ] Migration of model application to be deployed using Docker
 
-# References:
-### Datasets:
+## *References*
+#### Datasets:
 * https://github.com/clinc/oos-eval
 * https://www.kaggle.com/elvinagammed/chatbots-intent-recognition-dataset
-### Project:
+#### Project:
 * https://www.techwithtim.net/tutorials/ai-chatbot/part-1/
 * https://www.youtube.com/watch?v=GMppyAPbLYk&ab_channel=TechWithTim
