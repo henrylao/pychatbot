@@ -25,12 +25,38 @@
 * [ ] Integrate with a website flask
 * [ ] Serve model on a dedicated RESTapi server using Flask
 * [ ] Migration of model application to be deployed using Docker
+* [ ] Completed documentation of the model and relevant functions used:
+	* [x] Sequential Model
+	* [ ] Tensor
+	* [ ] Perceptron
+	* [ ] Tensor
+	* [ ] Layer
+	* [ ] Rectified Linear Activation Function (ReLU)
+	* [ ] Soft Max Function
+	* [ ] Stochastic Gradient Descent (SGD) Optimization Algorithm
+
 
 ## *References*
+#### RESTapi Server:
+* https://florimond.dev/blog/articles/2019/03/real-time-chatbot-server-python-bocadillo/
+
 #### Datasets:
 * https://github.com/clinc/oos-eval
 * https://www.kaggle.com/elvinagammed/chatbots-intent-recognition-dataset
+
 #### Project:
 * https://www.techwithtim.net/tutorials/ai-chatbot/part-1/
 * https://dzone.com/articles/python-chatbot-project-build-your-first-python-pro
 * https://www.youtube.com/watch?v=GMppyAPbLYk&ab_channel=TechWithTim
+
+#### Libraries for NLP:
+* Natural Language ToolKit
+* Gensim
+* Polyglot
+* Dialogflow
+* Tensorflow
+
+### Libraries for Python Web Dev:
+* Bocadillo
+* Flask
+* Django
