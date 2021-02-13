@@ -1,17 +1,19 @@
 # pychatbot
 
 # Installation:
-1. Clone the repository
+<b>1. Clone the repository</b>
 > git clone https://github.com/henrylao/pychatbot.git
 
-2. Create the virtual
+<b>2. Create the virtual environment</b>
+
   Windows:
 > path\to\project>python -m venv c:\path\to\myenv
 
   MacOS/Linux:
 > path/to/project/python -m venv path/to/project/myenv
 
-3. Activate the virtual
+<b>3. Activate the virtual</b>
+
   Windows:
 > path\to\project\myenv\Scripts\activate.bat
 
