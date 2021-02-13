@@ -32,4 +32,5 @@
 * https://www.kaggle.com/elvinagammed/chatbots-intent-recognition-dataset
 #### Project:
 * https://www.techwithtim.net/tutorials/ai-chatbot/part-1/
+* https://dzone.com/articles/python-chatbot-project-build-your-first-python-pro
 * https://www.youtube.com/watch?v=GMppyAPbLYk&ab_channel=TechWithTim
