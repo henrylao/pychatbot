@@ -61,7 +61,7 @@ pip install -r requirements.txt
 * https://github.com/clinc/oos-eval
 * https://www.kaggle.com/elvinagammed/chatbots-intent-recognition-dataset
 
-#### Project:
+#### Project Base:
 * https://www.techwithtim.net/tutorials/ai-chatbot/part-1/
 * https://dzone.com/articles/python-chatbot-project-build-your-first-python-pro
 * https://www.youtube.com/watch?v=GMppyAPbLYk&ab_channel=TechWithTim
