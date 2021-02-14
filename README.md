@@ -53,8 +53,9 @@ pip install -r requirements.txt
 * Reference ChatterBot for migration of model to a class
   - https://github.com/gunthercox/ChatterBot
 * Website: https://www.youtube.com/watch?v=dam0GPOAvVI&t=1901s&ab_channel=TechWithTim
-* REST API: https://www.youtube.com/watch?v=GMppyAPbLYk&ab_channel=TechWithTim
-
+* REST API: 
+  - https://www.youtube.com/watch?v=GMppyAPbLYk&ab_channel=TechWithTim
+  - https://towardsdatascience.com/deploying-a-machine-learning-model-as-a-rest-api-4a03b865c166
 #### Datasets:
 * https://github.com/clinc/oos-eval
 * https://www.kaggle.com/elvinagammed/chatbots-intent-recognition-dataset
