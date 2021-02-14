@@ -57,7 +57,7 @@ pip install -r requirements.txt
 * [ ] Complete testing for operating systems:
     * [x] Windows 10
     * [ ] Linux
-    * [ ] MacOS    
+    * [ ] MacOS     
 * [ ] Complete investigation of various datasets:
     * [ ] Question-Answer
         * [ ] Question-Answer Dataset: http://www.cs.cmu.edu/~ark/QA-data/
