@@ -25,7 +25,7 @@ source path/to/project/myvenv/activate
 ```
 4. Install package dependencies
 ``` sh
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 
