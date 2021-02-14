@@ -21,7 +21,7 @@ path\to\project\myenv\Scripts\activate.bat
 ```
 MacOS/Linux
 ```sh
-path/to/project/source path/to/project/myvenv/activate
+source path/to/project/myvenv/activate
 ```
 4. Install package dependencies
 ``` sh
