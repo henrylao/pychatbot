@@ -48,10 +48,12 @@ pip install -r requirements.txt
 ## *References*
 #### Server Deployment using Docker
 
-#### REST API Server:
+#### Website + REST API Server:
 * https://florimond.dev/blog/articles/2019/03/real-time-chatbot-server-python-bocadillo/
 * Reference ChatterBot for migration of model to a class
   - https://github.com/gunthercox/ChatterBot
+* Website: https://www.youtube.com/watch?v=dam0GPOAvVI&t=1901s&ab_channel=TechWithTim
+* REST API: https://www.youtube.com/watch?v=GMppyAPbLYk&ab_channel=TechWithTim
 
 #### Datasets:
 * https://github.com/clinc/oos-eval
