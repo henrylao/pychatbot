@@ -57,6 +57,7 @@ pip install -r requirements.txt
 * REST API Development: 
   - https://www.youtube.com/watch?v=GMppyAPbLYk&ab_channel=TechWithTim
   - https://towardsdatascience.com/deploying-a-machine-learning-model-as-a-rest-api-4a03b865c166
+  - production project file structure: https://www.freecodecamp.org/news/structuring-a-flask-restplus-web-service-for-production-builds-c2ec676de563/
 #### Datasets:
 * https://github.com/clinc/oos-eval
 * https://www.kaggle.com/elvinagammed/chatbots-intent-recognition-dataset
