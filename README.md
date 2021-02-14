@@ -36,7 +36,6 @@ pip install requirements.txt
 * [ ] Migration of model application to be deployed using Docker
 * [ ] Completed documentation of the model and relevant functions used:
 	* [x] Sequential Model
-	* [ ] Tensor
 	* [ ] Perceptron
 	* [ ] Tensor
 	* [ ] Layer
