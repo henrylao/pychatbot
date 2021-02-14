@@ -42,7 +42,8 @@ pip install requirements.txt
 	* [ ] Rectified Linear Activation Function (ReLU)
 	* [ ] Soft Max Function
 	* [ ] Stochastic Gradient Descent (SGD) Optimization Algorithm
-* [ ] Completed refactoring of the model to be a class for OOP
+
+* [ ] Completed refactoring of codebase for OOP
 
 
 ## *References*
