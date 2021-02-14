@@ -43,6 +43,10 @@ pip install -r requirements.txt
 	* [ ] Stochastic Gradient Descent (SGD) Optimization Algorithm
 
 * [x] Completed refactoring of codebase for OOP 
+* [ ] Complete testing for operating systems:
+  * [x] Windows 10
+  * [ ] Linux
+  * [ ] MacOS
 
 ## *References*
 #### Server Deployment using Docker
