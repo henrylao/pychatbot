@@ -74,7 +74,9 @@ pip install -r requirements.txt
         * [ ] NPS Chat Corpus: http://faculty.nps.edu/cmartell/NPSChat.htm
 
 ## *References*
-
+#### Modular Application Development
+* Application Factory Pattern: https://flask.palletsprojects.com/en/0.12.x/patterns/appfactories/
+* Flask and Creating Modular Apps: https://flask.palletsprojects.com/en/0.12.x/blueprints/#blueprints
 #### Server Deployment using Docker
 
 #### Website + REST API Server:
