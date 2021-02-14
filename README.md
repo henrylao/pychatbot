@@ -91,6 +91,8 @@ pip install -r requirements.txt
     - https://towardsdatascience.com/deploying-a-machine-learning-model-as-a-rest-api-4a03b865c166
     - production project file
       structure: https://www.freecodecamp.org/news/structuring-a-flask-restplus-web-service-for-production-builds-c2ec676de563/
+        - really nice but dense, need to dedicate a few hours looking through the code and assessing the objects and
+          their interactions/relations with each other
 
 #### Datasets:
 
