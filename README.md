@@ -31,7 +31,6 @@ pip install requirements.txt
 
 
 ## *Milestones*
-* [ ] Integrate with a website flask
 * [ ] Serve model on a dedicated REST API server using Flask by creating a REST endpoint of contact
 * [ ] Migration of model application to be deployed using Docker
 * [ ] Completed documentation of the model and relevant functions used:
