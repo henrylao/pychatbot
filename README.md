@@ -9,8 +9,8 @@ git clone https://github.com/henrylao/pychatbot.git
 ```
 
 2. Create the virtual environment in project root directory<br>
-   Windows:
 
+Windows:
 ```sh
 python -m venv c:\path\to\myenv
 ```
@@ -22,8 +22,8 @@ python -m venv path/to/project/myenv
 ```
 
 3. Activate the virtual environment<br>
-   Windows:
 
+Windows:
 ```sh
 path\to\project\myenv\Scripts\activate.bat
 ```
@@ -43,7 +43,9 @@ pip install -r requirements.txt
 ## *Milestones*
 
 * [x] Complete creation of REST API endpoint for NLP model
-* [ ] Migration of model application to be deployed using Docker
+  * [ ] Create a method of configuring the model to be loaded (Ex. dzone, oos, etc)
+* [ ] Complete website for presentation of the chatbot
+* [ ] Complete migration of model application to be deployed using Docker
 * [ ] Completed documentation of the model and relevant functions used:
     * [x] Sequential Model
     * [ ] Perceptron
