@@ -5,6 +5,8 @@ from flask_restful import reqparse, Api
 from pychatbot import utils
 from pychatbot.main.model.chatbot import ChatBot
 
+import datetime as dt
+
 app = Flask("chatbot-api")
 api = Api(app)
 
@@ -24,16 +26,19 @@ parser.add_argument('user', type=str, help="User message")
 
 BOT_BASE_URI = '/api/v1/bot/'
 
+
 @app.route(BOT_BASE_URI + "reply", methods=['POST'])
 def reply():
     if request.method == 'POST':
         args = parser.parse_args()
         output = bot.generate_response(args['message'])
         # print(output)
+        datetime = dt.datetime.now()
+        version = "0.0.1"
         output = {
-            "message":"",
-            "timestamp":"",
-            "version":""
+            "message": output,
+            "timestamp": datetime,
+            "version": version
         }
         return output
 

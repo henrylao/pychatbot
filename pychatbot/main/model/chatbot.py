@@ -14,6 +14,7 @@ INPUT_DIR = ROOT_DIR / "input"
 
 class ChatBot(nltk.WordNetLemmatizer):
     """ """
+
     def __init__(self, filepaths: dict = None, load_recent=True):
         # TODO implement this method
         pass
