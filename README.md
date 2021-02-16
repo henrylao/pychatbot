@@ -21,7 +21,7 @@ MacOS/Linux:
 python -m venv path/to/project/myenv
 ```
 
-3. Activate the virtual<br>
+3. Activate the virtual environment<br>
    Windows:
 
 ```sh
