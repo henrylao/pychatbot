@@ -59,7 +59,7 @@ pip install -r requirements.txt
 * [x] Completed refactoring of codebase for OOP
 * [ ] Complete testing for operating systems:
     * [x] Windows 10
-    * [ ] Linux
+    * [x] Linux
     * [ ] MacOS     
 * [ ] Complete investigation of various datasets:
     * [ ] Question-Answer
