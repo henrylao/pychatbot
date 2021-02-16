@@ -47,7 +47,7 @@ pip install -r requirements.txt
 * [ ] Completed documentation of the model and relevant functions used:
     * [x] Sequential Model
     * [ ] Perceptron
-    * [ ] Tensor
+    * [x] Tensor
     * [ ] Layer
     * [ ] Rectified Linear Activation Function (ReLU)
     * [ ] Soft Max Function
