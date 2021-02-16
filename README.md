@@ -42,7 +42,8 @@ pip install -r requirements.txt
 
 ## *Milestones*
 
-* [x] Complete creation of REST API endpoint for NLP model
+* [ ] Complete creation of REST API endpoint for NLP model
+  * [x] Create POST method for handling a request
   * [ ] Create a method of configuring the model to be loaded (Ex. dzone, oos, etc)
 * [ ] Complete website for presentation of the chatbot
 * [ ] Complete migration of model application to be deployed using Docker
