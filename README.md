@@ -18,7 +18,7 @@ python -m venv path/to/project/myenv
 3. Activate the virtual environment<br>
 Windows:
 ```sh
-path\to\project\myenv\Scripts\activate.bat
+path\to\project\myenv\Scripts\activate
 ```
 MacOS/Linux
 ```sh
