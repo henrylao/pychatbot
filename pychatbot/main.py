@@ -1,4 +1,5 @@
 # import utils
+import pytz
 from flask import Flask, request
 from flask_restful import reqparse, Api
 
@@ -15,7 +16,7 @@ ROOT_DIR = utils.get_project_root()
 CACHE_DIR = ROOT_DIR / "cache"
 INPUT_DIR = ROOT_DIR / "input"
 
-bot = ChatBot()
+bot = ChatBot(dataset_name="d-zone")
 bot.load()
 
 # argument parsing
@@ -31,14 +32,19 @@ BOT_BASE_URI = '/api/v1/bot/'
 def reply():
     if request.method == 'POST':
         args = parser.parse_args()
-        output = bot.generate_response(args['message'])
+        output_message = bot.generate_response(args['message'])
         # print(output)
-        datetime = dt.datetime.now()
+        tz = pytz.timezone("US/Pacific")
+        datetime = dt.datetime.now(tz)
+        datetime_fmt = "%a, %d %b %Y %H:%M:%S %Z"
         version = "0.0.1"
         output = {
-            "message": output,
-            "timestamp": datetime,
-            "version": version
+            "in_message": args['message'],
+            "out_message": output_message,
+            "created_at": dt.datetime.strftime(datetime, datetime_fmt),
+            "version": version,
+            "label": bot.label_probability,
+            "dataset": bot.dataset_name
         }
         return output
 

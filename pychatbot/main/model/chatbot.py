@@ -15,8 +15,22 @@ INPUT_DIR = ROOT_DIR / "input"
 class ChatBot(nltk.WordNetLemmatizer):
     """ """
 
-    def __init__(self, filepaths: dict = None, load_recent=True):
-        # TODO implement this method
+    def __init__(self, filepaths: dict = None, dataset_name = None):
+        # most recent response
+        self.label_probability = None
+        self.output_message = None
+        self.input_message = None
+        # model's dataset origin
+        self.dataset_name = dataset_name
+        self.labels = None
+        self.model = None
+        self.words = None
+        self.intents = None
+        # data filepaths
+        self._intent_path = None
+        self._model_path = None
+        self._words_path = None
+        self._labels_path = None
         pass
 
     def load(self, filepaths: dict = None):
@@ -27,18 +41,25 @@ class ChatBot(nltk.WordNetLemmatizer):
         """
 
         def _load_default():
-            self.intents = json.loads(open(INPUT_DIR / 'dzone-intents.json').read())
-            self.model = load_model(CACHE_DIR / 'chatbot_model.h5')
-            self.words = pickle.load(open(CACHE_DIR / 'words.pkl', 'rb'))
-            self.classes = pickle.load(open(CACHE_DIR / 'classes.pkl', 'rb'))
+            self._intent_path = INPUT_DIR / 'dzone-intents.json'
+            self._model_path = CACHE_DIR / 'chatbot_model.h5'
+            self._words_path = CACHE_DIR / 'words.pkl'
+            self._labels_path = CACHE_DIR / 'classes.pkl'
+            self.intents = json.loads(open(self._intent_path).read())
+            self.model = load_model(self._model_path)
+            self.words = pickle.load(open(self._words_path, 'rb'))
+            self.labels = pickle.load(open(self._labels_path, 'rb'))
 
         if filepaths != None:
             try:
-                # TODO implement this method
-                self.intents = json.loads(open(filepaths["intents"]).read())
-                self.model = load_model(filepaths['model-binary'])
-                self.words = pickle.load(open(filepaths['words'], 'rb'))
-                self.classes = pickle.load(open(filepaths['classes'], 'rb'))
+                self._intent_path = filepaths["intents"]
+                self._model_path = filepaths['model-binary']
+                self._words_path = filepaths['words']
+                self._labels_path = filepaths['classes']
+                self.intents = json.loads(open().read())
+                self.model = load_model(self._model_path)
+                self.words = pickle.load(open(self._words_path, 'rb'))
+                self.labels = pickle.load(open(self._labels_path, 'rb'))
             except Exception as e:
                 _load_default()
                 print(e)
@@ -100,8 +121,9 @@ class ChatBot(nltk.WordNetLemmatizer):
         # sorting strength probability
         results.sort(key=lambda x: x[1], reverse=True)
         return_list = []
+        # TODO does this ever return a list size greater than 1?
         for r in results:
-            return_list.append({"intent": self.classes[r[0]],
+            return_list.append({"intent": self.labels[r[0]],
                                 "probability": str(r[1])})
         return return_list
 
@@ -111,8 +133,12 @@ class ChatBot(nltk.WordNetLemmatizer):
         list_of_intents = self.intents['intents']
         for i in list_of_intents:
             if (i['tag'] == tag):
+                # output message is selected here
                 result = random.choice(i['responses'])
                 break
+        self.input_message = message
+        self.label_probability = label
+        self.output_message = result
         return result
 
 
