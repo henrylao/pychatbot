@@ -92,8 +92,7 @@ python3 main.py
 
 #### Server Deployment using Docker
 
-#### Website + REST API Server:
-
+#### Website + REST API Server
 * https://florimond.dev/blog/articles/2019/03/real-time-chatbot-server-python-bocadillo/
 * Reference ChatterBot for migration of model to a class
     - https://github.com/gunthercox/ChatterBot
@@ -106,27 +105,25 @@ python3 main.py
       structure: https://www.freecodecamp.org/news/structuring-a-flask-restplus-web-service-for-production-builds-c2ec676de563/
 
 
-#### Datasets:
-
+#### Datasets
 * https://github.com/clinc/oos-eval
 * https://www.kaggle.com/elvinagammed/chatbots-intent-recognition-dataset
 
-#### Project Base:
-
+#### Project Base
 * https://www.techwithtim.net/tutorials/ai-chatbot/part-1/
 * https://dzone.com/articles/python-chatbot-project-build-your-first-python-pro
 * https://www.youtube.com/watch?v=GMppyAPbLYk&ab_channel=TechWithTim
 
-#### Libraries for NLP:
-
+#### Libraries for NLP
 * Natural Language ToolKit
 * Gensim
 * Polyglot
 * Dialogflow
 * Tensorflow
 
-### Libraries for Python Web Dev:
+#### REST API Resources
 
+#### Libraries for Python Web Dev
 * Bocadillo
 * Flask
 * Django
