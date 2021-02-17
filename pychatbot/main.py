@@ -33,11 +33,13 @@ def reply():
     if request.method == 'POST':
         args = parser.parse_args()
         output_message = bot.generate_response(args['message'])
-        # print(output)
+
+        # TODO stuff that can be migrated to a config file
         tz = pytz.timezone("US/Pacific")
         datetime = dt.datetime.now(tz)
         datetime_fmt = "%a, %d %b %Y %H:%M:%S %Z"
         version = "0.0.1"
+
         output = {
             "in_message": args['message'],
             "out_message": output_message,
