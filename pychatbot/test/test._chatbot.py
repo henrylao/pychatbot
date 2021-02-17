@@ -7,7 +7,7 @@ BASE = "http://127.0.0.1:5000/"
 
 
 class MyTestCase(unittest.TestCase):
-    def test_bot(self):
+    def test_bot_POST(self):
         datetime_fmt = "%a, %d %b %Y %H:%M:%S %Z"
         tz = pytz.timezone("US/Pacific")
         payload = {"message": "Hi there! How are you doing?",
