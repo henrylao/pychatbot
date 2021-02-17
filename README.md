@@ -1,5 +1,12 @@
 # pychatbot
+## *Overview*
+This a project oriented around better understanding the various practices in developing a machine learned model its deployment. This repository currently serves as a hub for all the relevant works applicable to both learning and developing a model as well as learning and developing the server/website for deployment.
+
 The current model is trained for interpretation of a message as a singular intent from which a randomized response is generated from the classification of the input message.
+
+The model is currently served via a REST API POST request. Documentation is needed here despite the servers limited functionality.
+
+The website is currently not developed but there are plans to continue firstly an implementation in Flask to understand the basics of python backend web  development followed by a migration to using the python Django web framework.
 
 ## *Installation*
 1. Clone the repository
@@ -86,6 +93,8 @@ python3 main.py
         * [ ] NPS Chat Corpus: http://faculty.nps.edu/cmartell/NPSChat.htm
 
 ## *References*
+Much of this project could not have been done without information from others. This is an attempt at creating an exhaustive list of all the applicable technologies and resources applied during this project's timeline.
+
 #### Modular Application Development
 * Application Factory Pattern: https://flask.palletsprojects.com/en/0.12.x/patterns/appfactories/
 * Flask and Creating Modular Apps: https://flask.palletsprojects.com/en/0.12.x/blueprints/#blueprints
