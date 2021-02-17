@@ -2,7 +2,6 @@
 The current model is trained for interpretation of a message as a singular intent from which a randomized response is generated from the classification of the input message.
 
 ## *Installation*
-
 1. Clone the repository
 ``` sh
 git clone https://github.com/henrylao/pychatbot.git
@@ -36,7 +35,6 @@ pip3 install -r requirements.txt
 ```
 
 ## *REST API Server Startup*
-
 1. Ensure installation of dependencies from the installation section and activation of the virtual environment.
 2. Navigate to the pychatbot-rest-server directory.
 ``` sh
@@ -53,7 +51,6 @@ python3 main.py
 ```
 
 ## *Milestones*
-
 * [ ] Complete creation of REST API endpoint for NLP model
   * [x] Create POST method for handling a request
   * [ ] Create a method of configuring the model to be loaded (Ex. dzone, oos, etc)
