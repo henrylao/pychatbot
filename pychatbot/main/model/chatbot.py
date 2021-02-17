@@ -132,9 +132,10 @@ class ChatBot(nltk.WordNetLemmatizer):
         tag = label[0]['intent']
         list_of_intents = self.intents['intents']
         for i in list_of_intents:
+            # this will potentially break for the oos model
             if (i['tag'] == tag):
                 # output message is selected here
-                result = random.choice(i['responses'])
+                result = random.choice(i['responses']) # current implementation is a randomized selection from the set of responsese
                 break
         self.input_message = message
         self.label_probability = label
