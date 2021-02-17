@@ -1,46 +1,56 @@
 # pychatbot
+The current model is trained for interpretation of a message as a singular intent from which a randomized response is generated from the classification of the input message.
 
-## *Installation*:
+## *Installation*
 
 1. Clone the repository
-
 ``` sh
 git clone https://github.com/henrylao/pychatbot.git
 ```
-
 2. Create the virtual environment in project root directory<br>
-
 Windows:
 ```sh
 python -m venv c:\path\to\myenv
 ```
-
 MacOS/Linux:
-
 ```sh
 python -m venv path/to/project/myenv
 ```
-
 3. Activate the virtual environment<br>
-
 Windows:
 ```sh
 path\to\project\myenv\Scripts\activate.bat
 ```
-
 MacOS/Linux
-
 ```sh
 source path/to/project/myvenv/activate
 ```
-
-4. Install package dependencies
-
+4. Install package dependencies<br>
+Windows/Linux
 ``` sh
 pip install -r requirements.txt
 ```
-## *REST API Server Startup* 
+MacOS
+``` sh
+pip3 install -r requirements.txt
+```
 
+## *REST API Server Startup*
+
+1. Ensure installation of dependencies from the installation section and activation of the virtual environment.
+2. Navigate to the pychatbot-rest-server directory.
+``` sh
+cd path/to/project/pychatbot/pychatbot-rest-server/
+```
+3. Run the server driver main.py<br>
+Windows/Linux
+``` sh
+python main.py
+```
+MacOS
+``` sh
+python3 main.py
+```
 
 ## *Milestones*
 
