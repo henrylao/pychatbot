@@ -14,6 +14,7 @@ The website is currently not developed but there are plans to continue firstly a
 git clone https://github.com/henrylao/pychatbot.git
 ```
 2. Create the virtual environment in project root directory<br>
+
 Windows:
 ```sh
 python -m venv c:\path\to\myenv
@@ -23,6 +24,7 @@ MacOS/Linux:
 python -m venv path/to/project/myenv
 ```
 3. Activate the virtual environment<br>
+
 Windows:
 ```sh
 path\to\project\myenv\Scripts\activate
@@ -32,22 +34,23 @@ MacOS/Linux
 source path/to/project/myvenv/activate
 ```
 4. Install package dependencies<br>
-Windows/Linux
+
+Run one of the following:
 ``` sh
 pip install -r requirements.txt
 ```
-MacOS
 ``` sh
 pip3 install -r requirements.txt
 ```
 
 ## *REST API Server Startup*
 1. Ensure installation of dependencies from the installation section and activation of the virtual environment.
-2. Navigate to the pychatbot-rest-server directory.
+2. Navigate to the server directory.
 ``` sh
-cd path/to/project/pychatbot/pychatbot-rest-server/
+cd path/to/project/pychatbot/
 ```
 3. Run the server driver main.py<br>
+
 Windows/Linux
 ``` sh
 python main.py
