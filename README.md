@@ -76,10 +76,10 @@ python3 main.py
     * [ ] Stochastic Gradient Descent (SGD) Optimization Algorithm
 
 * [x] Completed refactoring of codebase for OOP
-* [ ] Complete testing for operating systems:
+* [x] Complete testing for operating systems:
     * [x] Windows 10
     * [x] Linux
-    * [ ] MacOS     
+    * [x] MacOS     
 * [ ] Complete investigation of various datasets:
     * [ ] Question-Answer
         * [ ] Question-Answer Dataset: http://www.cs.cmu.edu/~ark/QA-data/
@@ -109,12 +109,11 @@ Much of this project could not have been done without information from others. T
 * Reference ChatterBot for migration of model to a class
     - https://github.com/gunthercox/ChatterBot
 * Website Development:
-    - https://www.youtube.com/watch?v=dam0GPOAvVI&t=1901s&ab_channel=TechWithTim
+    - Tutorial: https://www.youtube.com/watch?v=dam0GPOAvVI&t=1901s&ab_channel=TechWithTim
 * REST API Development:
-    - https://www.youtube.com/watch?v=GMppyAPbLYk&ab_channel=TechWithTim
-    - https://towardsdatascience.com/deploying-a-machine-learning-model-as-a-rest-api-4a03b865c166
-    - production project file
-      structure: https://www.freecodecamp.org/news/structuring-a-flask-restplus-web-service-for-production-builds-c2ec676de563/
+    - Tutorial: https://www.youtube.com/watch?v=GMppyAPbLYk&ab_channel=TechWithTim
+    - Tutorial: https://towardsdatascience.com/deploying-a-machine-learning-model-as-a-rest-api-4a03b865c166
+    - Production Structure: https://www.freecodecamp.org/news/structuring-a-flask-restplus-web-service-for-production-builds-c2ec676de563/
 
 
 #### Datasets
