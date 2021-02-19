@@ -2,7 +2,7 @@ import json
 import random
 import nltk
 
-from pychatbot import utils
+from server import utils
 import pickle
 import numpy as np
 from keras.models import load_model
