@@ -12,7 +12,7 @@ class MyTestCase(unittest.TestCase):
         tz = pytz.timezone("US/Pacific")
         payload = {"message": "Hi there! How are you doing?",
                    "created_at": dt.datetime.strftime(dt.datetime.now(tz=tz), datetime_fmt),
-                   "user": "henry",
+                   "user": "john doe",
                    }
         print("POST request:", payload)
         response = requests.post(BASE + "/api/v1/bot/reply",
