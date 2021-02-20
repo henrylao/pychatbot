@@ -2,10 +2,9 @@
 import pytz
 from flask import Flask, request
 from flask_restful import reqparse, Api
-
-from server import utils
 from server.model.chatbot import ChatBot
-
+from server import utils
+# import utils
 import datetime as dt
 
 app = Flask("chatbot-api")
@@ -13,8 +12,13 @@ api = Api(app)
 
 # setup project paths
 ROOT_DIR = utils.get_project_root()
-CACHE_DIR = ROOT_DIR / "cache"
+
+CACHE_DIR = ROOT_DIR / "model_cache"
 INPUT_DIR = ROOT_DIR / "input"
+print(__name__,"loading from...")
+print("Root:", ROOT_DIR)
+print("Cache:", CACHE_DIR)
+print("Input:", INPUT_DIR)
 
 bot = ChatBot(dataset_name="d-zone")
 bot.load()

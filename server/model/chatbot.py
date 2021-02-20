@@ -8,9 +8,12 @@ import numpy as np
 from keras.models import load_model
 
 ROOT_DIR = utils.get_project_root()
-CACHE_DIR = ROOT_DIR / "cache"
+CACHE_DIR = ROOT_DIR / "model_cache"
 INPUT_DIR = ROOT_DIR / "input"
-
+print(__name__,"loading from...")
+print("Root:", ROOT_DIR)
+print("Cache:", CACHE_DIR)
+print("Input:", INPUT_DIR)
 
 class ChatBot(nltk.WordNetLemmatizer):
     """ This is the class that encapsulates the loaded NLP trained model 
