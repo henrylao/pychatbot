@@ -100,6 +100,7 @@ REST API:
     * [x] Windows 10
     * [x] Linux
     * [x] MacOS
+* [ ] Refactor server.driver.py to be a controller stored in the server.controller package
 
 Website:
 

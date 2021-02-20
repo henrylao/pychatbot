@@ -2,7 +2,7 @@
 import pytz
 from flask import Flask, request
 from flask_restful import reqparse, Api
-from server.model.chatbot import ChatBot
+from server.main.model.chatbot import ChatBot
 from server import utils
 # import utils
 import datetime as dt
