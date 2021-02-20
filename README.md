@@ -119,7 +119,8 @@ Model & Server Documentation:
     * [ ] Stochastic Gradient Descent (SGD) Optimization Algorithm
 
 DataSet Exploration:
-* [ ] Complete aggregation of responses a bot can serve 
+* [ ] Complete aggregation of responses a bot can serve
+* [ ] Collect relevant NLP reference materials  
 * [ ] Complete investigation of various datasets:
     * [ ] Question-Answer
         * [ ] Question-Answer Dataset: http://www.cs.cmu.edu/~ark/QA-data/
@@ -140,14 +141,14 @@ DataSet Exploration:
 Much of this project could not have been done without information from others. This is an attempt at creating an
 exhaustive list of all the applicable technologies and resources applied during this project's timeline.
 
-#### Modular Application Development
+#### Design Practices
 
 * Application Factory Pattern: https://flask.palletsprojects.com/en/0.12.x/patterns/appfactories/
 * Flask and Creating Modular Apps: https://flask.palletsprojects.com/en/0.12.x/blueprints/#blueprints
 
 #### Server Deployment using Docker and AWS (some cloud resource provider)
 
-#### Website + REST API Server
+#### Website + REST API Server Development
 
 * https://florimond.dev/blog/articles/2019/03/real-time-chatbot-server-python-bocadillo/
 * Reference ChatterBot for migration of model to a class
@@ -160,7 +161,7 @@ exhaustive list of all the applicable technologies and resources applied during 
     - Production
       Structure: https://www.freecodecamp.org/news/structuring-a-flask-restplus-web-service-for-production-builds-c2ec676de563/
 
-#### Datasets Utilized
+#### Datasets In-use
 
 * https://github.com/clinc/oos-eval
 * https://www.kaggle.com/elvinagammed/chatbots-intent-recognition-dataset
@@ -171,7 +172,7 @@ exhaustive list of all the applicable technologies and resources applied during 
 * https://dzone.com/articles/python-chatbot-project-build-your-first-python-pro
 * https://www.youtube.com/watch?v=GMppyAPbLYk&ab_channel=TechWithTim
 
-#### Libraries for NLP
+#### NLP Libraries
 
 * Natural Language ToolKit
 * Gensim
@@ -180,7 +181,7 @@ exhaustive list of all the applicable technologies and resources applied during 
 * Tensorflow
 
 
-#### Libraries for Python Web Dev
+#### Python Web Dev Libraries/Frameworks
 
 * Bocadillo
 * Flask
