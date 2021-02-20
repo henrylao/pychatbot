@@ -159,12 +159,12 @@ exhaustive list of all the applicable technologies and resources applied during 
     - Production
       Structure: https://www.freecodecamp.org/news/structuring-a-flask-restplus-web-service-for-production-builds-c2ec676de563/
 
-#### Datasets
+#### Datasets Utilized
 
 * https://github.com/clinc/oos-eval
 * https://www.kaggle.com/elvinagammed/chatbots-intent-recognition-dataset
 
-#### Project Base
+#### Bot Project Origin
 
 * https://www.techwithtim.net/tutorials/ai-chatbot/part-1/
 * https://dzone.com/articles/python-chatbot-project-build-your-first-python-pro
@@ -178,7 +178,6 @@ exhaustive list of all the applicable technologies and resources applied during 
 * Dialogflow
 * Tensorflow
 
-#### REST API Resources
 
 #### Libraries for Python Web Dev
 
