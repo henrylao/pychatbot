@@ -2,7 +2,7 @@ import json
 import random
 import nltk
 
-from server import utils
+from pychatbot import utils
 import pickle
 import numpy as np
 from keras.models import load_model
@@ -13,7 +13,10 @@ INPUT_DIR = ROOT_DIR / "input"
 
 
 class ChatBot(nltk.WordNetLemmatizer):
-    """ """
+    """ This is the class that encapsulates the loaded NLP trained model 
+    and its configurations. 
+
+    """
 
     def __init__(self, filepaths: dict = None, dataset_name = None):
         # most recent response
@@ -31,10 +34,14 @@ class ChatBot(nltk.WordNetLemmatizer):
         self._model_path = None
         self._words_path = None
         self._labels_path = None
+        self._version = None
         pass
 
     def load(self, filepaths: dict = None):
         """
+        This is function for loading a model and its related assets
+        for launching the bot. The internal function for loading is
+        called if there is no configuration of filepaths to be loaded from.
 
         :param filepaths:
         :return:
@@ -61,7 +68,8 @@ class ChatBot(nltk.WordNetLemmatizer):
                 self.words = pickle.load(open(self._words_path, 'rb'))
                 self.labels = pickle.load(open(self._labels_path, 'rb'))
             except Exception as e:
-                _load_default()
+                # _load_default()
+                # throw exception here
                 print(e)
         else:
             _load_default()
@@ -73,6 +81,9 @@ class ChatBot(nltk.WordNetLemmatizer):
 
     def _lemmatize(self, message) -> list:
         """
+            This is an internal function called for tokenizing all
+            the sentences into a unique set of words to be learned by
+            the bot.
 
            :param message:
            :return:
@@ -87,6 +98,8 @@ class ChatBot(nltk.WordNetLemmatizer):
 
     def _create_bag_of_words(self, tokens, show_details=True):
         """
+        This is the internal function utilized to perform the hot 
+        encoding of the set of words to be learned by the model.
 
         :param message:
         :param words:
@@ -107,8 +120,11 @@ class ChatBot(nltk.WordNetLemmatizer):
                         pass
         return (np.array(bag))
 
-    def classify(self, message) -> np.array:
+    def classify(self, message) -> list:
         """
+        This is the function called for predicting the intent
+        of a given input sentence and the confidence of the model
+        backing the prediction of the intent.
 
         :param message:
         :return:
@@ -128,6 +144,12 @@ class ChatBot(nltk.WordNetLemmatizer):
         return return_list
 
     def generate_response(self, message: str) -> str:
+        """
+        This is the function to be called for generating an
+        output response message from an input message. The 
+        bot classifies the input message, then proceeds to 
+        formulate an output based upon its trained responses.
+        """
         label = self.classify(message)
         tag = label[0]['intent']
         list_of_intents = self.intents['intents']
