@@ -6,8 +6,7 @@ This a project oriented around better understanding the various practices in dev
 deployment. This repository currently serves as a hub for all the relevant works applicable to both learning and
 developing a model as well as learning and developing the server/website for deployment.
 
-The current model is trained for interpretation of a message as a singular intent from which a randomized response is
-generated from the classification of the input message.
+The current model is trained for interpretation and response generation for a single intent message. A sparse feature representation approach is taken by utilizing a discrete bag of words(BOW) model is utilized for feature extraction from input texts. The input text is hashed into a binary format of n-feature dimension from which an intent is predicted for response generation. Training requires generation of the BOW model from which the hashing algorithm is applied. Each training instance contains an associated label --a classification of intent. This set of words and their associated intents denote all the existing words in the bot's vocabulary -- it's understanding of a given input message. The predicted intent is then used to specify the particular collection of responses to be randomly drawn from during output generation.
 
 The model is currently served via a REST API POST request. Documentation is needed here despite the servers limited
 functionality.
@@ -140,6 +139,11 @@ DataSet Exploration:
 
 Much of this project could not have been done without information from others. This is an attempt at creating an
 exhaustive list of all the applicable technologies and resources applied during this project's timeline.
+
+#### NLP & Neural Networks
+* NLP & NN: https://u.cs.biu.ac.il/~yogo/nnlp.pdf
+* Bag of Words & Spare Representation: https://medium.com/@shiivangii/data-representation-in-nlp-7bb6a771599a
+* Bag of Words: https://machinelearningmastery.com/gentle-introduction-bag-words-model/
 
 #### Design Practices
 
